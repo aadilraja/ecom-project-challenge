@@ -13,3 +13,16 @@ This mini project demonstrates generating synthetic e-commerce CSV datasets for 
 - `ingest.py` – script that creates `ecommerce.db` and loads the CSVs with referential integrity enforced.
 - `ecommerce.db` – SQLite database produced by running `ingest.py`, containing the populated tables.
 
+## How to Run
+
+1. (Optional) Re-create the CSV inputs:
+   ```bash
+   python generate_data.py
+   ```
+2. Build the SQLite database and ingest all CSVs:
+   ```bash
+   python ingest.py
+   ```
+3. Run queries against `ecommerce.db` with your preferred SQLite client (e.g., `sqlite-utils`, `DB Browser for SQLite`, or a short Python script using `sqlite3`).
+
+
